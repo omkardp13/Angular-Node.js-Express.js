@@ -1,0 +1,12 @@
+<!--
+The code also contains a paragraph element <p> which is conditionally displayed using the *ngIf directive. The *ngIf directive evaluates the expression message and if it returns true, the paragraph is displayed. If the expression is false, the paragraph is not displayed.
+
+Within the paragraph, the {{message | json }} syntax is used to display the value of the message variable. The | json filter is applied to the message variable, which formats the data as a JSON string for easier readability. The {{}} syntax is used for data binding, where the value of the message variable is interpolated and displayed in the HTML.
+--> 
+
+<h1>Angular + Node.js + Express.js Application</h1>
+<br>
+
+<p *ngIf ="message">
+  {{message | json }}
+</p>
